@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreetFighter", "StreetFighter\StreetFighter.csproj", "{06ED266F-37A4-4916-A7B9-2C73074BE120}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06ED266F-37A4-4916-A7B9-2C73074BE120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06ED266F-37A4-4916-A7B9-2C73074BE120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06ED266F-37A4-4916-A7B9-2C73074BE120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06ED266F-37A4-4916-A7B9-2C73074BE120}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAC0F333-2BE1-4DD9-B17E-33950AFFE35D}
+	EndGlobalSection
+EndGlobal
