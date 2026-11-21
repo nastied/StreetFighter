@@ -273,28 +273,30 @@ namespace StreetFighter
         private void SetUpForm()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.UserPaint, true);
-            background_images = Directory.GetFiles("street_fighter_images\\background", "*.jpg").ToList();
+
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+
+            background_images = Directory.GetFiles(Path.Combine(baseDir, "street_fighter_images", "background"), "*.jpg").ToList();
             background = Image.FromFile(background_images[bg_number]);
 
-            ryuStand = Image.FromFile("street_fighter_images\\standing.gif");
-            ryuForwards = Image.FromFile("street_fighter_images\\forwards.gif");
-            ryuBackwards = Image.FromFile("street_fighter_images\\backwards.gif");
-            ryuPunch1 = Image.FromFile("street_fighter_images\\punch1.gif");
-            ryuPunch2 = Image.FromFile("street_fighter_images\\punch2.gif");
-            ryuFireballPose = Image.FromFile("street_fighter_images\\fireball.gif");
-            fireballAnim = Image.FromFile("street_fighter_images\\FireBallFinal.gif");
+            ryuStand = Image.FromFile(Path.Combine(baseDir, "street_fighter_images", "standing.gif"));
+            ryuForwards = Image.FromFile(Path.Combine(baseDir, "street_fighter_images", "forwards.gif"));
+            ryuBackwards = Image.FromFile(Path.Combine(baseDir, "street_fighter_images", "backwards.gif"));
+            ryuPunch1 = Image.FromFile(Path.Combine(baseDir, "street_fighter_images", "punch1.gif"));
+            ryuPunch2 = Image.FromFile(Path.Combine(baseDir, "street_fighter_images", "punch2.gif"));
+            ryuFireballPose = Image.FromFile(Path.Combine(baseDir, "street_fighter_images", "fireball.gif"));
+            fireballAnim = Image.FromFile(Path.Combine(baseDir, "street_fighter_images", "FireBallFinal.gif"));
 
-            chunStand = Image.FromFile("chunLi2\\stand.gif");
-            chunForwards = Image.FromFile("chunLi3\\forwards.gif");
-            chunBackwards = Image.FromFile("chunLi3\\backwards.gif");
-            chunPunch1 = Image.FromFile("chunLi3\\punch1.gif");
-            chunPunch2 = Image.FromFile("chunLi3\\punch2.gif");
-            chunKicks = Image.FromFile("chunLi3\\kicks.gif");
+            chunStand = Image.FromFile(Path.Combine(baseDir, "chunLi2", "stand.gif"));
+            chunForwards = Image.FromFile(Path.Combine(baseDir, "chunLi3", "forwards.gif"));
+            chunBackwards = Image.FromFile(Path.Combine(baseDir, "chunLi3", "backwards.gif"));
+            chunPunch1 = Image.FromFile(Path.Combine(baseDir, "chunLi3", "punch1.gif"));
+            chunPunch2 = Image.FromFile(Path.Combine(baseDir, "chunLi3", "punch2.gif"));
+            chunKicks = Image.FromFile(Path.Combine(baseDir, "chunLi3", "kicks.gif"));
 
-            //drum = Image.FromFile("street_fighter_images\\drum.png");
-            portraitChunLi = Image.FromFile("street_fighter_images\\portraitChunLi.png");
-            portraitRyu = Image.FromFile("street_fighter_images\\portraitRyu.png");
-            vs = Image.FromFile("street_fighter_images\\vsLogo.png");
+            portraitChunLi = Image.FromFile(Path.Combine(baseDir, "street_fighter_images", "portraitChunLi.png"));
+            portraitRyu = Image.FromFile(Path.Combine(baseDir, "street_fighter_images", "portraitRyu.png"));
+            vs = Image.FromFile(Path.Combine(baseDir, "street_fighter_images", "vsLogo.png"));
 
             player = ryuStand;
             player2 = chunStand;
